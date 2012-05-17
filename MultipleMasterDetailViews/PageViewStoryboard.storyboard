@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="WFh-il-iNc">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Page App View Controller - Detail 3-->
+        <scene sceneID="wND-ml-REa">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgZ-mf-9YQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Detail 3" id="dwr-S0-63Q" customClass="pageAppViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z5N-eC-ESh">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q6x-3I-DWe"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="994" y="-244"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="qQA-ES-ywx">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sa6-ph-q9J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="CVController" id="sTl-eN-Nhk" customClass="contentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tzG-aU-rYC">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="6Zc-Th-Fc8">
+                                <rect key="frame" x="76" y="12" width="788" height="1015"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="webView" destination="6Zc-Th-Fc8" id="Rhq-RD-f1o"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="987" y="1193"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ItL-wd-x0a">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfZ-e9-smJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="WFh-il-iNc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="oeJ-jb-oNf">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dwr-S0-63Q" kind="relationship" relationship="rootViewController" id="Tt7-u2-kQI"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="20" y="-244"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="contentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/contentViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="pageAppViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/pageAppViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
