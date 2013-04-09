@@ -7,10 +7,9 @@
 //
 
 #import "MDAppDelegate.h"
-#import "MDMultipleMasterDetailManager.h"
 
 @interface MDAppDelegate()
-@property (strong,nonatomic)MDMultipleMasterDetailManager* masterDetailManager;
+
 @end
 
 @implementation MDAppDelegate

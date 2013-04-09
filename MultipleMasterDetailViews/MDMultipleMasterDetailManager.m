@@ -97,4 +97,13 @@
     }      
 }
 
+-(void) updateSplitViewController
+{
+    UITabBarController* tabBarController = [self.splitViewController.viewControllers objectAtIndex:0];
+    
+    UINavigationController* detailRootController = [self.detailControllers objectAtIndex:tabBarController.selectedIndex];
+    
+    self.splitViewController.viewControllers = [NSArray arrayWithObjects:tabBarController,detailRootController, nil];
+}
+
 @end

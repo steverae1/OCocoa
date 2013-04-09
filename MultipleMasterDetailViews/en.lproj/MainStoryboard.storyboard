@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="MFm-Tx-iJ2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3nO-z7-6IL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController definesPresentationContext="YES" id="RNh-dP-iOd" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="49A-3t-izM">
@@ -23,13 +21,13 @@
                         <segue destination="3Zz-dO-gxQ" kind="relationship" relationship="viewControllers" id="8BF-6t-IIg"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3nO-z7-6IL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="637" y="-172"/>
         </scene>
         <!--Navigation Controller - Item TWO-->
         <scene sceneID="14">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="13" sceneMemberID="firstResponder"/>
                 <navigationController id="3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item TWO" id="6dp-Rk-WXv"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6">
@@ -39,43 +37,51 @@
                         <segue destination="19" kind="relationship" relationship="rootViewController" id="25"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1508" y="708"/>
         </scene>
         <!--Detail View Controller - Detail 1-->
         <scene sceneID="16">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="15" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="" title="Detail 1" id="4" customClass="MDDetailViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="26">
+                    <view key="view" contentMode="scaleToFill" id="GYx-7s-su7">
                         <rect key="frame" x="0.0" y="64" width="703" height="704"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here 1" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="27">
-                                <rect key="frame" x="20" y="341" width="663" height="21"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" id="LL0-6M-VQi">
-                                <rect key="frame" x="20" y="555" width="159" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" id="26">
+                                <rect key="frame" x="0.0" y="0.0" width="703" height="704"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here 1" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="27">
+                                        <rect key="frame" x="52" y="341" width="598" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" size="system"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="LL0-6M-VQi">
+                                        <rect key="frame" x="52" y="705" width="159" height="129"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vU2-4d-VBB">
+                                        <rect key="frame" x="250" y="550" width="236" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vU2-4d-VBB">
-                                <rect key="frame" x="218" y="400" width="236" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -87,13 +93,13 @@
                         <outlet property="gestureView" destination="LL0-6M-VQi" id="CKh-Zw-EOA"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="519" y="1357"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="18">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
                 <splitViewController id="5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
@@ -103,13 +109,13 @@
                         <segue destination="RNh-dP-iOd" kind="relationship" relationship="masterViewController" id="kHM-zP-qaO"/>
                     </connections>
                 </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-711" y="-178"/>
         </scene>
         <!--Master View Controller - Master-->
         <scene sceneID="24">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="" title="Master" clearsSelectionOnViewWillAppear="NO" id="19" customClass="MDMasterViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="20">
                         <rect key="frame" x="0.0" y="64" width="320" height="655"/>
@@ -148,13 +154,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="39"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2027" y="708"/>
         </scene>
         <!--Navigation Controller - Detail 1-->
         <scene sceneID="50">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="49" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="Detail 1 Root" title="Detail 1" id="42" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="43">
                         <autoresizingMask key="autoresizingMask"/>
@@ -163,13 +169,13 @@
                         <segue destination="4" kind="relationship" relationship="rootViewController" id="51"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-319" y="1357"/>
         </scene>
         <!--Navigation Controller - Item ONE-->
         <scene sceneID="Hyc-K2-b1M">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u4p-0g-GtF" sceneMemberID="firstResponder"/>
                 <navigationController id="q1q-Bx-EjZ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item ONE" id="PNh-0B-wr7"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="FSb-qR-IBn">
@@ -179,13 +185,13 @@
                         <segue destination="6ki-tW-nBL" kind="relationship" relationship="rootViewController" id="ub8-Da-tJX"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4p-0g-GtF" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1508" y="-162"/>
         </scene>
         <!--Master View Controller - Master-->
         <scene sceneID="vpW-yD-scT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vI3-ff-2lY" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="" title="Master" clearsSelectionOnViewWillAppear="NO" id="6ki-tW-nBL" customClass="MDMasterViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="eJN-xO-ZH9">
                         <rect key="frame" x="0.0" y="64" width="320" height="655"/>
@@ -224,13 +230,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="64u-Nr-qqo"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vI3-ff-2lY" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2027" y="-162"/>
         </scene>
         <!--Navigation Controller - Detail 2-->
         <scene sceneID="LdE-1G-SEq">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6IL-0R-dUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="Detail 2 Root" title="Detail 2" id="dgR-0F-KWF" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="mUk-8t-BaM">
                         <autoresizingMask key="autoresizingMask"/>
@@ -239,33 +245,40 @@
                         <segue destination="Yoy-3l-ZF9" kind="relationship" relationship="rootViewController" id="bkM-Ru-FbE"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6IL-0R-dUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-362" y="2392"/>
         </scene>
         <!--Detail View Controller - Detail 2-->
         <scene sceneID="Pbr-Mv-kts">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Bz-ZC-qR4" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="" title="Detail 2" id="Yoy-3l-ZF9" customClass="MDDetailViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7rp-Ef-zCl">
+                    <view key="view" contentMode="scaleToFill" id="7hg-wx-jl9">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here 2" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="ldg-Jp-7ui">
-                                <rect key="frame" x="20" y="468" width="728" height="21"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" id="tAj-Ay-upT">
-                                <rect key="frame" x="83" y="557" width="180" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" id="7rp-Ef-zCl">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here 2" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="ldg-Jp-7ui">
+                                        <rect key="frame" x="20" y="468" width="728" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" size="system"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="tAj-Ay-upT">
+                                        <rect key="frame" x="83" y="579" width="180" height="133"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="uht-A4-BpM"/>
@@ -274,13 +287,13 @@
                         <outlet property="gestureView" destination="tAj-Ay-upT" id="NcE-TR-K0E"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Bz-ZC-qR4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="602" y="2392"/>
         </scene>
         <!--Navigation Controller - Item THREE-->
         <scene sceneID="weB-AN-Qhm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="usD-fH-6xU" sceneMemberID="firstResponder"/>
                 <navigationController id="3Zz-dO-gxQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item THREE" id="xFX-Vt-Tbm"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Whn-2N-eSB">
@@ -290,13 +303,13 @@
                         <segue destination="fNO-Mi-e2s" kind="relationship" relationship="rootViewController" id="Ma1-Do-VgR"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="usD-fH-6xU" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1508" y="1586"/>
         </scene>
         <!--Master View Controller - Master-->
         <scene sceneID="RXV-C5-6iR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eWR-P8-OuP" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="" title="Master" clearsSelectionOnViewWillAppear="NO" id="fNO-Mi-e2s" customClass="MDMasterViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="FMb-bZ-gPi">
                         <rect key="frame" x="0.0" y="64" width="320" height="655"/>
@@ -335,10 +348,23 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="hXA-Ru-ka5"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWR-P8-OuP" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2027" y="1586"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="MDDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="gestureView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="MDMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MDMasterViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

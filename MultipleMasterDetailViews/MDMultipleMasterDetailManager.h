@@ -12,4 +12,6 @@
 
 -(id)initWithSplitViewController:(UISplitViewController *)splitViewController withDetailRootControllers:(NSArray *)detailControllers;
 
+-(void) updateSplitViewController;
+
 @end

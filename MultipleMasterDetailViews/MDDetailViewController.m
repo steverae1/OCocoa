@@ -7,10 +7,12 @@
 //
 
 #import "MDDetailViewController.h"
+#import "MDAppDelegate.h"
 
 @interface MDDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
+@property (strong, nonatomic) ManualViewController *modalController;
 @end
 
 @implementation MDDetailViewController
@@ -61,6 +63,10 @@
     
     UIPanGestureRecognizer *p = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(dragging:)];
 	[self.gestureView addGestureRecognizer:p];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(editClicked:)];
+    
+    self.navigationItem.rightBarButtonItem.enabled = YES;
 }
 
 -(void) dragging:(UIPanGestureRecognizer *) p
@@ -108,6 +114,114 @@
 {
     // Return YES for supported orientations
     return YES;
+}
+
+-(void)editClicked:(id)sender
+{
+    self.modalController = [[ManualViewController alloc] init];
+    
+    self.modalController.modalPresentationStyle = UIModalPresentationFormSheet;
+    self.modalController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    UINavigationController* nc = nil;
+    nc = [[UINavigationController alloc] initWithRootViewController: self.modalController];
+    [nc setToolbarHidden:YES animated: NO];
+    
+    nc.modalPresentationStyle = self.modalController.modalPresentationStyle;
+    
+    self.modalController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(autoModalViewControllerDismiss:)];
+    
+    [nc setNavigationBarHidden: NO];
+    nc.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+    nc.toolbar.barStyle = self.navigationController.navigationBar.barStyle;
+    
+    [self presentViewController:nc animated:YES completion:nil];
+    
+    // self.modalController.view.superview.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+    // self.modalController.view.superview.frame = CGRectMake(0, 0, 100, 100);
+    // self.modalController.view.superview.bounds = CGRectMake(0, 0, 100, 100);
+    // CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    // CGPoint center = CGPointMake(CGRectGetMidX(screenBounds), CGRectGetMidY(screenBounds));
+    // nc.view.superview.center = CGPointMake(center.y, center.x);
+    
+    // UIDeviceOrientation _orientation = [nc interfaceOrientation];
+    // if (UIDeviceOrientationIsPortrait(_orientation)){
+        // self.modalController.view.superview.center = CGPointMake(768/2, 1024/2 + 10);
+    // } else {
+        // self.modalController.view.superview.center = CGPointMake(1024/2, 768/2 + 10);
+    // }
+    
+    for (UIView *subView in self.view.subviews)
+    {
+        [subView removeFromSuperview];
+        [self.modalController.view addSubview:subView];
+    }
+    
+    // UITabBarController* tabBarController = [self.splitViewController.viewControllers objectAtIndex:0];
+    
+    // UIViewController *placeholderController = [[UIViewController alloc] init];
+    // placeholderController.view.backgroundColor = [UIColor yellowColor];
+    
+    // self.splitViewController.viewControllers = [NSArray arrayWithObjects:tabBarController,placeholderController, nil];
+    
+    
+    
+
+    
+    /*
+    // modalController.view.superview.center = self.view.center;
+    
+    CGPoint centerpoint = CGPointMake([[UIScreen mainScreen] bounds].size.width/2 , [[UIScreen mainScreen] bounds].size.height/2);
+    
+    modalController.view.superview.center = centerpoint;
+    */
+    
+    return;
+    
+}
+
+- (void) autoModalViewControllerDismiss: (id)sender
+{
+    for (UIView *subView in self.modalController.view.subviews)
+    {
+            [subView removeFromSuperview];
+            [self.view addSubview:subView];
+    }
+    
+    // UIViewController * detailController = [self.splitViewController.viewControllers objectAtIndex:1];
+    
+    // self.splitViewController.viewControllers = [NSArray arrayWithObjects:tabBarController,detailController, nil];
+
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    // [self viewWillAppear:NO];
+    // [self viewDidAppear:NO];
+    
+    // UITabBarController* tabBarController = [self.splitViewController.viewControllers objectAtIndex:0];
+    
+    // UINavigationController * detailController = [self.splitViewController.viewControllers objectAtIndex:1];
+    
+    // UIViewController *placeholderController = [[UIViewController alloc] init];
+    // placeholderController.view.backgroundColor = [UIColor yellowColor];
+    
+    // [detailController pushViewController:placeholderController animated:YES];
+    
+    // [detailController popViewControllerAnimated:YES];
+    
+    // UISplitViewController *holdSplitViewController = self.splitViewController;
+    
+    // self.splitViewController.viewControllers = [NSArray arrayWithObjects:tabBarController, placeholderController, nil];
+    
+    
+    // self.splitViewController.viewControllers = [NSArray arrayWithObjects:tabBarController, detailController, nil];
+    
+    
+    
+    
+    
+    // MDAppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
+    // [appDelegate.masterDetailManager updateSplitViewController];
+
 }
 
 #pragma mark - Split view

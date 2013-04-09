@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ManualViewController.h"
 
 @interface MDDetailViewController : UIViewController <UISplitViewControllerDelegate>
 

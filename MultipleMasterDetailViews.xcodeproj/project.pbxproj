@@ -20,6 +20,7 @@
 		A881B5CD155599E100910F56 /* PageViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A881B5CC155599E100910F56 /* PageViewStoryboard.storyboard */; };
 		A881B5D61555A1DB00910F56 /* pageAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A881B5D51555A1DB00910F56 /* pageAppViewController.m */; };
 		A881B5D81555A21100910F56 /* contentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A881B5D71555A21100910F56 /* contentViewController.m */; };
+		A8942999170F6BC100DA4D9D /* ManualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8942998170F6BC100DA4D9D /* ManualViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		A881B5D51555A1DB00910F56 /* pageAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pageAppViewController.m; sourceTree = "<group>"; };
 		A881B5D71555A21100910F56 /* contentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contentViewController.m; sourceTree = "<group>"; };
 		A881B5D91555A23D00910F56 /* contentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = contentViewController.h; sourceTree = "<group>"; };
+		A8942997170F6BC100DA4D9D /* ManualViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualViewController.h; sourceTree = "<group>"; };
+		A8942998170F6BC100DA4D9D /* ManualViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				A87F7A4D14BA2D460030E53F /* MDMasterViewController.m */,
 				A87F7A4F14BA2D460030E53F /* MDDetailViewController.h */,
 				A87F7A5014BA2D460030E53F /* MDDetailViewController.m */,
+				A8942997170F6BC100DA4D9D /* ManualViewController.h */,
+				A8942998170F6BC100DA4D9D /* ManualViewController.m */,
 				A881B5CF15559A1800910F56 /* PageViewGroup */,
 				A87F7A3E14BA2D460030E53F /* Supporting Files */,
 			);
@@ -200,6 +205,7 @@
 				A83A296714E8577600B0C503 /* MDMultipleMasterDetailManager.m in Sources */,
 				A881B5D61555A1DB00910F56 /* pageAppViewController.m in Sources */,
 				A881B5D81555A21100910F56 /* contentViewController.m in Sources */,
+				A8942999170F6BC100DA4D9D /* ManualViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +284,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultipleMasterDetailViews/MultipleMasterDetailViews-Prefix.pch";
 				INFOPLIST_FILE = "MultipleMasterDetailViews/MultipleMasterDetailViews-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -289,6 +296,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultipleMasterDetailViews/MultipleMasterDetailViews-Prefix.pch";
 				INFOPLIST_FILE = "MultipleMasterDetailViews/MultipleMasterDetailViews-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
